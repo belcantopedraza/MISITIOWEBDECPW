@@ -13,9 +13,13 @@ moviendo = true;
 };
 setInterval (function(){
 if (!moviendo){
-for ( i=1; i<=5; i++ ){
-alert ("TIEMPO"); //Detencion de movimiento del mouse.
-window.location.href = "https://belcantopedraza.github.io/INICIO-DE-SECION/" 
+for ( i=1; i<=2; i++ ){
+var conf = confirm ("click 'YES' or 'NO' ");
+if (conf ==true) {
+window.location.href = "https://belcantopedraza.github.io/MISITIOWEBDECPW/"
+} else {
+window.location.href = "https://belcantopedraza.github.io/INICIO-DE-SECION/"
+}
 }} else {
 moviendo = false;
 }             ''
