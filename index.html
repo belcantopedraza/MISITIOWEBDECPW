@@ -6,8 +6,21 @@
 </head>
 <body>
 <script>
-setTimeout(function(){
-alert("BIENVENIDO A MI SITIO WEB")},3000)
+(function(){
+var moviendo = false;
+document.onmousemove = function(){
+moviendo = true;
+};
+setInterval (function(){
+if (!moviendo){
+for ( i=1; i<=5; i++ ){
+alert ("TIEMPO"); //Detencion de movimiento del mouse.
+window.location.href = "Aqui pones el link de tu pagina de inicio de sesion y contraseña" 
+}} else {
+moviendo = false;
+}             ''
+}, 3000); //Aqui van los segundos de retardo
+}) ()
 </script>
 <center> <img src="imagenes/cbtis.jpg"style="width:600x;height:300px" alt="Imagen CBTIS46"> </center>
 <body background="imagenes/fondo6.jpg">
